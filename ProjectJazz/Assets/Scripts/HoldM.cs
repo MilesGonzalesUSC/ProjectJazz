@@ -30,21 +30,8 @@ public class HoldM : MonoBehaviour
             {
                 GameManager.instance.HoldNoteCompleted(); // Notify the GameManager
             }
-            else
-            {
-                HandleMiss();
-            }
-
-            // Deactivate the note after processing
-            gameObject.SetActive(false);
         }
 
-        // If the note exits the activator while being held, it's a miss
-        if (!canBePressed && isHolding)
-        {
-            HandleMiss();
-            gameObject.SetActive(false);
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -60,13 +47,8 @@ public class HoldM : MonoBehaviour
         if (other.tag == "Activator" && gameObject.activeSelf)
         {
             canBePressed = false;
-
-            // If not holding, mark as missed
-            if (!isHolding)
-            {
-                HandleMiss();
-                gameObject.SetActive(false);
-            }
+            gameObject.SetActive(false);
+ 
         }
     }
 
