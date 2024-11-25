@@ -102,7 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   isHolding: 0
-  keyToHold: 273
+  keyToHold: 276
   hitEffect: {fileID: 6730992836339477929, guid: 312bd669e702bdf48b72d387b7327e61, type: 3}
   missEffect: {fileID: 0}
 --- !u!61 &7203741091109320760
