@@ -4,26 +4,68 @@ using UnityEngine;
 
 public class FreestyleBlock : MonoBehaviour
 {
-    // Start is called before the first frame update
     public GameObject freestyleEffect;
     public bool canBePressed;
 
+    // Audio clips for each arrow
+    public AudioClip upArrowClip;
+    public AudioClip downArrowClip;
+    public AudioClip leftArrowClip;
+    public AudioClip rightArrowClip;
+
+    private AudioSource audioSource;
+
     void Start()
     {
-        
+        // Get the AudioSource component
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            Debug.LogError("AudioSource component missing on this GameObject.");
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.anyKeyDown)
+        if (canBePressed)
+        {
+            // Check for specific arrow keys
+            if (Input.GetKeyDown(KeyCode.UpArrow))
             {
-                if (canBePressed)
-                {
-                    Instantiate(freestyleEffect, transform.position, freestyleEffect.transform.rotation);
-                     GameManager.instance.FreestyleHit();
-                }
+                PlayAudioClip(upArrowClip);
+                TriggerEffect();
             }
+            else if (Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                PlayAudioClip(downArrowClip);
+                TriggerEffect();
+            }
+            else if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                PlayAudioClip(leftArrowClip);
+                TriggerEffect();
+            }
+            else if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                PlayAudioClip(rightArrowClip);
+                TriggerEffect();
+            }
+        }
+    }
+
+    private void TriggerEffect()
+    {
+        // Instantiate effect and trigger GameManager action
+        Instantiate(freestyleEffect, transform.position, freestyleEffect.transform.rotation);
+        GameManager.instance.FreestyleHit();
+    }
+
+    private void PlayAudioClip(AudioClip clip)
+    {
+        if (audioSource != null && clip != null)
+        {
+            audioSource.PlayOneShot(clip);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -39,7 +81,7 @@ public class FreestyleBlock : MonoBehaviour
         if (other.tag == "Activator" && gameObject.activeSelf)
         {
             canBePressed = false;
-            gameObject.SetActive(false);   
+            gameObject.SetActive(false);
         }
     }
 }

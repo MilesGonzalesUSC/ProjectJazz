@@ -3357,7 +3357,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &304087780
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8079,7 +8079,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &777961714
 Transform:
   m_ObjectHideFlags: 0
@@ -14797,7 +14797,6 @@ GameObject:
   - component: {fileID: 1467204711}
   - component: {fileID: 1467204709}
   - component: {fileID: 1467204723}
-  - component: {fileID: 1467204724}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -14828,7 +14827,7 @@ MonoBehaviour:
   itemId: 0
   blockName: Dialog1
   description: Scene 1 Dialog 1
-  eventHandler: {fileID: 1467204724}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1467204700}
   - {fileID: 1467204699}
@@ -14885,9 +14884,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1467204710}
-  selectedCommands:
-  - {fileID: 1467204709}
+  - {fileID: 1467204678}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -16066,21 +16064,6 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
---- !u!114 &1467204724
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1467204676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 1467204678}
-  suppressBlockAutoSelect: 0
-  waitForFrames: 1
 --- !u!1 &1467256607
 GameObject:
   m_ObjectHideFlags: 0
@@ -20321,7 +20304,7 @@ RectTransform:
   m_Father: {fileID: 528721892}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.00001, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -20463,6 +20446,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   freestyleEffect: {fileID: 7274913223283338222, guid: 6a78eccfba9d16b448d49806c41c360f, type: 3}
   canBePressed: 0
+  upArrowClip: {fileID: 0}
+  downArrowClip: {fileID: 0}
+  leftArrowClip: {fileID: 0}
+  rightArrowClip: {fileID: 0}
 --- !u!61 &1954890349
 BoxCollider2D:
   m_ObjectHideFlags: 0
