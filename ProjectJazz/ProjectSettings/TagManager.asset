@@ -48,3 +48,6 @@ TagManager:
   - name: Arrows
     uniqueID: 200853155
     locked: 0
+  - name: New Layer 3
+    uniqueID: 2301887971
+    locked: 0
