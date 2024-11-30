@@ -12,7 +12,7 @@ public class ScoreText : MonoBehaviour
     private int _previousScore;
     private int _currentScore;
 
-    private void ScaleScore()
+    private void ScaleScoreText()
     {
         transform.DOScale(transform.localScale * scaleMultiplier, scaleTime);
         transform.DOScale(transform.localScale, scaleTime).SetDelay(scaleTime);
@@ -23,7 +23,7 @@ public class ScoreText : MonoBehaviour
         _currentScore = GameManager.instance.currentScore;
         if (_currentScore != _previousScore)
         {
-            ScaleScore();
+            ScaleScoreText();
             _previousScore = _currentScore;
         }
     }
