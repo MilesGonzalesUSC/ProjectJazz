@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public bool startPlaying;
     public BeatScroller theBS;
     public static GameManager instance;
-    public int currentScore;
+    public float currentScore;
     public int scorePerNote = 50;
     public int scorePerGoodNote = 75;
     public int scorePerPerfectNote = 100;
@@ -129,6 +129,11 @@ public class GameManager : MonoBehaviour
         currentScore +=  scorePerHoldNote* currentMultiplier;
         NoteHit(); // Increment multiplier and update score display
         holdHits++;
+    }
+
+    public void AddScore(float points)
+    {
+        currentScore += points * currentMultiplier;
     }
 
     public void FreestyleHit()
