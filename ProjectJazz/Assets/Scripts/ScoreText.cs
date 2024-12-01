@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using DG.Tweening;
 using TMPro;
@@ -11,11 +12,17 @@ public class ScoreText : MonoBehaviour
 
     private int _previousScore;
     private int _currentScore;
+    private Vector3 _originalScale;
+
+    private void Awake()
+    {
+        _originalScale = transform.localScale;
+    }
 
     private void ScaleScoreText()
     {
-        transform.DOScale(transform.localScale * scaleMultiplier, scaleTime);
-        transform.DOScale(transform.localScale, scaleTime).SetDelay(scaleTime);
+        transform.DOScale(_originalScale * scaleMultiplier, scaleTime);
+        transform.DOScale(_originalScale, scaleTime).SetDelay(scaleTime);
     }
 
     private void Update()
