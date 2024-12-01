@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Fungus;
+using UnityEngine.Rendering.PostProcessing;
 
 public class GameManager : MonoBehaviour
 {
@@ -65,7 +66,7 @@ public class GameManager : MonoBehaviour
             if (!theMusic.isPlaying && !resultScreen.activeInHierarchy)
             {
                 resultScreen.SetActive(true);
-
+                BlurBackground();
                 normals.text = "" + normalHits;
                 goods.text = goodHits.ToString();
                 perfects.text = perfectHits.ToString();
@@ -78,8 +79,13 @@ public class GameManager : MonoBehaviour
                     flowchart.ExecuteBlock(fungusBlock);
                 }
             }
-
         }
+    }
+
+    private void BlurBackground()
+    {
+        var mainCamera = Camera.main;
+        mainCamera.GetComponent<PostProcessVolume>().enabled = true;
     }
 
     public void NoteHit()

@@ -6,6 +6,7 @@ using DG.Tweening;
 
 public class NewBehaviourScript : MonoBehaviour
 {
+    public GameObject gameObjectToFly;
     private SpriteRenderer theSR;
     public Sprite defaultImage;
     public Sprite pressImage;
@@ -43,6 +44,14 @@ public class NewBehaviourScript : MonoBehaviour
             transform.DOScale(_originScale, 0.1f);
             _spriteRenderer.DOColor(_originColor, 0.1f);
             _spriteRenderer.DOFade(1f, 0.1f);
+            ButtonFlyToBar();
         }
+    }
+
+    public void ButtonFlyToBar()
+    {
+        var thisButton = Instantiate(gameObjectToFly);
+        Vector3[] path = {transform.position, new Vector3(-8f, 1f, 0), new Vector3(-5.5f, 4.5f, 0)};
+        thisButton.transform.DOPath(path, 0.5f, PathType.CatmullRom).OnComplete(() => Destroy(thisButton));
     }
 }
