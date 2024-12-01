@@ -34,16 +34,12 @@ public class NewBehaviourScript : MonoBehaviour
         {
             theSR.sprite = pressImage;
             transform.DOScale(transform.localScale * 0.9f, 0.1f);
-            _spriteRenderer.DOColor(Color.gray, 0.1f);
-            _spriteRenderer.DOFade(0.75f, 0.1f);
         }
 
         if(Input.GetKeyUp(keyToPress))
         {
             theSR.sprite = defaultImage;
             transform.DOScale(_originScale, 0.1f);
-            _spriteRenderer.DOColor(_originColor, 0.1f);
-            _spriteRenderer.DOFade(1f, 0.1f);
             ButtonFlyToBar();
         }
     }
