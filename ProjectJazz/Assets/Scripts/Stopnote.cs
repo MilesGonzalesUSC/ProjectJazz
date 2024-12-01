@@ -33,6 +33,8 @@ public class Stopnote : MonoBehaviour
             {
                 flowchart.ExecuteBlock(blockName);
             }
+
+            Destroy(gameObject);
         }
     }
 }

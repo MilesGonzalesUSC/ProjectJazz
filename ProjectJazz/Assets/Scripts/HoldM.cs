@@ -53,12 +53,7 @@ public class HoldM : MonoBehaviour
         if (Input.GetKeyUp(keyToHold) && isHolding)
         {
             isHolding = false;
-
-            // If the player didn't hold the key long enough, handle it as a miss
-            if (canBePressed && holdTime < requiredHoldTime)
-            {
-                HandleMiss(); // Notify the GameManager of a miss
-            }
+            
         }
     }
 
