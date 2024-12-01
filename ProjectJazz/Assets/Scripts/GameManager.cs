@@ -62,17 +62,8 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            if (!theMusic.isPlaying && !resultScreen.activeInHierarchy)
-            {
-                resultScreen.SetActive(true);
-
-                normals.text = "" + normalHits;
-                goods.text = goodHits.ToString();
-                perfects.text = perfectHits.ToString();
-                misses.text = "" + missHits;
-                holds.text = "" + holdHits;
-                finalScore.text = scoreText.text;
-                
+            if (!theMusic.isPlaying)
+            {   
                 if (flowchart != null && flowchart.HasBlock(fungusBlock))
                 {
                     flowchart.ExecuteBlock(fungusBlock);
@@ -147,6 +138,21 @@ public class GameManager : MonoBehaviour
             currentScore += scorePerPerfectNote * currentMultiplier;
             NoteHit();
             perfectHits++;
+        }
+    }
+
+    public void ResultScreen()
+    {
+        if (!theMusic.isPlaying && !resultScreen.activeInHierarchy)
+        {
+            resultScreen.SetActive(true);
+
+            normals.text = "" + normalHits;
+            goods.text = goodHits.ToString();
+            perfects.text = perfectHits.ToString();
+            misses.text = "" + missHits;
+            holds.text = "" + holdHits;
+            finalScore.text = scoreText.text;
         }
     }
 }
