@@ -861,7 +861,7 @@ MonoBehaviour:
   blackFade: {fileID: 1373988272}
   sceneLevels:
   - Map
-  - Church
+  - Church (Gospel)
   roads:
   - {fileID: 1759844824}
 --- !u!1 &1027231615
@@ -1174,7 +1174,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1373988271
 RectTransform:
   m_ObjectHideFlags: 0
