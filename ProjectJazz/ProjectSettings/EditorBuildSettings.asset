@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Alley (Saints).unity
     guid: 7722f8949561aef4f9fd0b4c756df6be
   - enabled: 1
-    path: Assets/Scenes/Map.unity
+    path: Assets/Scenes/ChurchMap.unity
     guid: f393e93f543a0904abaf6c28298298f6
   - enabled: 1
     path: Assets/Scenes/Church (Gospel).unity
