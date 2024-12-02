@@ -40,7 +40,11 @@ public class NewBehaviourScript : MonoBehaviour
         {
             theSR.sprite = defaultImage;
             transform.DOScale(_originScale, 0.1f);
+<<<<<<< HEAD
             ButtonFlyToBar();
+=======
+            //ButtonFlyToBar();
+>>>>>>> main
         }
     }
 

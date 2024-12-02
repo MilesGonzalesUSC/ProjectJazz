@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public bool startPlaying;
     public BeatScroller theBS;
     public static GameManager instance;
-    public int currentScore;
+    public float currentScore;
     public int scorePerNote = 50;
     public int scorePerGoodNote = 75;
     public int scorePerPerfectNote = 100;
@@ -63,6 +63,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+<<<<<<< HEAD
             if (!theMusic.isPlaying && !resultScreen.activeInHierarchy)
             {
                 resultScreen.SetActive(true);
@@ -74,6 +75,10 @@ public class GameManager : MonoBehaviour
                 holds.text = "" + holdHits;
                 finalScore.text = scoreText.text;
                 
+=======
+            if (!theMusic.isPlaying)
+            {   
+>>>>>>> main
                 if (flowchart != null && flowchart.HasBlock(fungusBlock))
                 {
                     flowchart.ExecuteBlock(fungusBlock);
@@ -146,6 +151,11 @@ public class GameManager : MonoBehaviour
         holdHits++;
     }
 
+    public void AddScore(float points)
+    {
+        currentScore += points * currentMultiplier;
+    }
+
     public void FreestyleHit()
     {
         if (currentScore <= 60000)
@@ -153,6 +163,21 @@ public class GameManager : MonoBehaviour
             currentScore += scorePerPerfectNote * currentMultiplier;
             NoteHit();
             perfectHits++;
+        }
+    }
+
+    public void ResultScreen()
+    {
+        if (!theMusic.isPlaying && !resultScreen.activeInHierarchy)
+        {
+            resultScreen.SetActive(true);
+
+            normals.text = "" + normalHits;
+            goods.text = goodHits.ToString();
+            perfects.text = perfectHits.ToString();
+            misses.text = "" + missHits;
+            holds.text = "" + holdHits;
+            finalScore.text = scoreText.text;
         }
     }
 }
