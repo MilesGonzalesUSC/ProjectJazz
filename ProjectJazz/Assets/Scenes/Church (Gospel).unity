@@ -20754,8 +20754,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1205e85fa129fe4797849fc4d14d539, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeValue1: 16666
-  nodeValue2: 36666
+  nodeValue1: 13200
+  nodeValue2: 26400
   nodeColor1: {r: 0.9433962, g: 0.31320864, b: 0.04004982, a: 1}
   nodeColor2: {r: 0.9716981, g: 0.68396556, b: 0, a: 1}
   nodeColor3: {r: 0.64401007, g: 1, b: 0, a: 1}
@@ -20805,7 +20805,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 50000
+  m_MaxValue: 40000
   m_WholeNumbers: 0
   m_Value: 1
   m_OnValueChanged:
@@ -25676,7 +25676,6 @@ GameObject:
   - component: {fileID: 1467204710}
   - component: {fileID: 1467204723}
   - component: {fileID: 1467204724}
-  - component: {fileID: 1467204725}
   - component: {fileID: 1467204727}
   - component: {fileID: 1467204726}
   - component: {fileID: 1467204729}
@@ -25705,8 +25704,6 @@ GameObject:
   - component: {fileID: 1467204737}
   - component: {fileID: 1467204738}
   - component: {fileID: 1467204739}
-  - component: {fileID: 1467204758}
-  - component: {fileID: 1467204757}
   - component: {fileID: 1467204756}
   - component: {fileID: 1467204761}
   - component: {fileID: 1467204760}
@@ -25764,7 +25761,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -120.22493
     y: 87.77712
-    width: 93.16109
+    width: 91.84396
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 1
@@ -25874,9 +25871,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 14.261488
-    y: 149.5881
-    width: 94.37689
+    x: 75.254395
+    y: 92.14121
+    width: 93.262405
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -25950,9 +25947,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -105.495445
-    y: 151.44672
-    width: 70.06079
+    x: -15.424545
+    y: 89.74456
+    width: 70.567375
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -25961,43 +25958,11 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 1467204758}
-  - {fileID: 1467204725}
-  - {fileID: 1467204757}
   - {fileID: 1467204727}
   - {fileID: 1467204783}
   - {fileID: 1467204756}
   - {fileID: 1467204726}
   suppressAllAutoSelections: 0
---- !u!114 &1467204725
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1467204676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 45
-  indentLevel: 0
-  storyText: '*Mumbling*... Too Exciting..
-
-'
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &1467204726
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -26085,9 +26050,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 129.2682
-    y: 146.90192
-    width: 85.86626
+    x: 183.16905
+    y: 94.41953
+    width: 84.75177
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -26741,48 +26706,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &1467204757
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1467204676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 75
-  indentLevel: 0
-  storyText: "*Mumbling*... Rebellious...\r"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1467204758
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1467204676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65d551a201c94bc79950076ff3eaf2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 74
-  indentLevel: 0
-  sayDialog: {fileID: 564124519}
 --- !u!114 &1467204759
 MonoBehaviour:
   m_ObjectHideFlags: 2

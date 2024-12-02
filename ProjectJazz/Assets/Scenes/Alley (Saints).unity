@@ -672,6 +672,10 @@ PrefabInstance:
       propertyPath: missEffect
       value: 
       objectReference: {fileID: 7750313909786900120, guid: 08177d9d34d82d1419bbe0a72d983eb9, type: 3}
+    - target: {fileID: 2784751689258627020, guid: da40e41f688c0274d9f9de66274d9ccc, type: 3}
+      propertyPath: requiredHoldTime
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5206176049666525379, guid: da40e41f688c0274d9f9de66274d9ccc, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -3626,7 +3630,7 @@ Transform:
   m_GameObject: {fileID: 253333724}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -1.9, y: 83.1, z: 0}
+  m_LocalPosition: {x: -1.9, y: 80.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4284,6 +4288,10 @@ PrefabInstance:
       propertyPath: missEffect
       value: 
       objectReference: {fileID: 7750313909786900120, guid: 08177d9d34d82d1419bbe0a72d983eb9, type: 3}
+    - target: {fileID: 2784751689258627020, guid: da40e41f688c0274d9f9de66274d9ccc, type: 3}
+      propertyPath: requiredHoldTime
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 5206176049666525379, guid: da40e41f688c0274d9f9de66274d9ccc, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -5124,6 +5132,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 682213857}
     m_Modifications:
+    - target: {fileID: 1921938184166940172, guid: 43f21b423faaecd498c9fd4a5b29a502, type: 3}
+      propertyPath: requiredHoldTime
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2056173515174217893, guid: 43f21b423faaecd498c9fd4a5b29a502, type: 3}
       propertyPath: m_LocalScale.y
       value: 1.24
@@ -8996,6 +9008,10 @@ PrefabInstance:
     - target: {fileID: 3196549191267982497, guid: 7426dff86361e654186b7e84ac6d939f, type: 3}
       propertyPath: keyToHold
       value: 276
+      objectReference: {fileID: 0}
+    - target: {fileID: 3196549191267982497, guid: 7426dff86361e654186b7e84ac6d939f, type: 3}
+      propertyPath: requiredHoldTime
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 5747692962032903689, guid: 7426dff86361e654186b7e84ac6d939f, type: 3}
       propertyPath: m_LocalScale.x
@@ -14432,6 +14448,10 @@ PrefabInstance:
       propertyPath: keyToHold
       value: 276
       objectReference: {fileID: 0}
+    - target: {fileID: 3196549191267982497, guid: 7426dff86361e654186b7e84ac6d939f, type: 3}
+      propertyPath: requiredHoldTime
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 5747692962032903689, guid: 7426dff86361e654186b7e84ac6d939f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6273
@@ -14886,6 +14906,10 @@ PrefabInstance:
       propertyPath: missEffect
       value: 
       objectReference: {fileID: 7750313909786900120, guid: 08177d9d34d82d1419bbe0a72d983eb9, type: 3}
+    - target: {fileID: 8842777355753849526, guid: 6c6e8f88a2276804191e6573b1487d9c, type: 3}
+      propertyPath: requiredHoldTime
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 9185192107583885042, guid: 6c6e8f88a2276804191e6573b1487d9c, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -15857,6 +15881,10 @@ PrefabInstance:
     - target: {fileID: 3196549191267982497, guid: 7426dff86361e654186b7e84ac6d939f, type: 3}
       propertyPath: keyToHold
       value: 276
+      objectReference: {fileID: 0}
+    - target: {fileID: 3196549191267982497, guid: 7426dff86361e654186b7e84ac6d939f, type: 3}
+      propertyPath: requiredHoldTime
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 5747692962032903689, guid: 7426dff86361e654186b7e84ac6d939f, type: 3}
       propertyPath: m_LocalScale.x
@@ -19404,7 +19432,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 66.571434
     y: 69.333336
-    width: 91.71429
+    width: 94
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 1
@@ -19487,9 +19515,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1467204678}
+  - {fileID: 1467204710}
   selectedCommands:
-  - {fileID: 1467204743}
+  - {fileID: 1467204716}
   variables: []
   description: 
   stepPause: 0
@@ -19811,7 +19839,7 @@ MonoBehaviour:
   showCount: 1
   extendPrevious: 0
   fadeWhenDone: 1
-  waitForClick: 0
+  waitForClick: 1
   stopVoiceover: 1
   waitForVO: 1
   setSayDialog: {fileID: 0}
@@ -20309,7 +20337,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 182.28572
     y: 68.21429
-    width: 92.28571
+    width: 95.33333
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21219,7 +21247,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 71.55391
     y: 136.04477
-    width: 84.85715
+    width: 86
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -27775,6 +27803,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 682213857}
     m_Modifications:
+    - target: {fileID: 1921938184166940172, guid: 43f21b423faaecd498c9fd4a5b29a502, type: 3}
+      propertyPath: requiredHoldTime
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2056173515174217893, guid: 43f21b423faaecd498c9fd4a5b29a502, type: 3}
       propertyPath: m_LocalScale.y
       value: 1.24
@@ -29080,6 +29112,10 @@ PrefabInstance:
       propertyPath: missEffect
       value: 
       objectReference: {fileID: 7750313909786900120, guid: 08177d9d34d82d1419bbe0a72d983eb9, type: 3}
+    - target: {fileID: 8842777355753849526, guid: 6c6e8f88a2276804191e6573b1487d9c, type: 3}
+      propertyPath: requiredHoldTime
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 9185192107583885042, guid: 6c6e8f88a2276804191e6573b1487d9c, type: 3}
       propertyPath: m_Layer
       value: 0
