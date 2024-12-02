@@ -19488,7 +19488,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1467204678}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1467204743}
   variables: []
   description: 
   stepPause: 0
@@ -20963,7 +20964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 61
   indentLevel: 0
-  sayDialog: {fileID: 2121333533}
+  sayDialog: {fileID: 1287188197}
 --- !u!114 &1467204744
 MonoBehaviour:
   m_ObjectHideFlags: 2

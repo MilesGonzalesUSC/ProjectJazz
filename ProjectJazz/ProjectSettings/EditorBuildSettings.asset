@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Church (Night).unity
     guid: 339069390759eb246af0b6f5860fb218
+  - enabled: 1
+    path: Assets/Scenes/BarMap.unity
+    guid: 86cf5b6e7e1189746b7d20471f1b20d2
+  - enabled: 1
+    path: Assets/Scenes/End_Test.unity
+    guid: e54f3f1d5ee548c44b812b5c242a9692
   m_configObjects: {}

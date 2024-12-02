@@ -786,7 +786,7 @@ MonoBehaviour:
   blackFade: {fileID: 1373988272}
   sceneLevels:
   - Map
-  - Church (Gospel)
+  - End_Test
   roads:
   - {fileID: 1759844824}
 --- !u!1 &1027231615
