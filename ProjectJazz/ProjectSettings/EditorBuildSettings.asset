@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Church (Gospel).unity
     guid: 3d18ee44ba4c6c64a8ccfce7be78a429
+  - enabled: 1
+    path: Assets/Scenes/Church (Night).unity
+    guid: 339069390759eb246af0b6f5860fb218
   m_configObjects: {}
