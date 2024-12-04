@@ -1,39 +1,19 @@
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ScoreProgressBar : MonoBehaviour
 {
-    public float nodeValue1;
-    public float nodeValue2;
-    public Color nodeColor1;
-    public Color nodeColor2;
-    public Color nodeColor3;
+    public int maxScore;
     
-    [SerializeField] private Slider progressBar;
-
-    private GameManager _gameManager;
-    private Image _fill;
+    [SerializeField] private List<GameObject> fills = new();
     
-    private void Awake()
-    {
-        _gameManager = FindObjectOfType<GameManager>();
-        _fill = progressBar.fillRect.GetComponent<Image>();
-    }
-
     private void Update()
     {
-        progressBar.value = _gameManager.currentScore;
-        if (progressBar.value < nodeValue1)
+        if(GameManager.instance == null) return;
+        var maxIndex = GameManager.instance.currentScore * 10 / maxScore;
+        for (int i = 0; i < Mathf.Floor(maxIndex); i++)
         {
-            _fill.color = nodeColor1;
-        }
-        else if(progressBar.value >= nodeValue1 && progressBar.value < nodeValue2)
-        {
-            _fill.color = nodeColor2;
-        }
-        else if (progressBar.value >= nodeValue2)
-        {
-            _fill.color = nodeColor3;
+            fills[i].SetActive(true);
         }
     }
 }
