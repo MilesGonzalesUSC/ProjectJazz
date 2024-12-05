@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Fungus;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -31,8 +32,13 @@ public class GameManager : MonoBehaviour
     public float missHits;
     public float holdHits;
     public GameObject resultScreen;
-    public Text finalScore;
-    public Text normals, goods, perfects, misses, holds;
+    public TextMeshProUGUI finalScore;
+    public TextMeshProUGUI normals, goods, perfects, misses, holds;
+    public TextMeshProUGUI levelText;
+    public float SLevel;
+    public float ALevel;
+    public float BLevel;
+    public float CLevel;
 
     public Flowchart flowchart;
     public string fungusBlock = "name";
@@ -152,12 +158,32 @@ public class GameManager : MonoBehaviour
         {
             resultScreen.SetActive(true);
 
-            /*normals.text = "" + normalHits;
-            goods.text = goodHits.ToString();
-            perfects.text = perfectHits.ToString();
-            misses.text = "" + missHits;
-            holds.text = "" + holdHits;
-            finalScore.text = scoreText.text;*/
+            normals.text = "NORMAL: " + normalHits;
+            goods.text = "GOOD: " + goodHits;
+            perfects.text = "PERFECT:" + perfectHits;
+            misses.text = "MISS: " + missHits;
+            holds.text = "HOLD: " + holdHits;
+            finalScore.text = scoreText.text;
+            if (currentScore >= SLevel)
+            {
+                levelText.text = "S";
+            }
+            else if (currentScore >= ALevel)
+            {
+                levelText.text = "A";
+            }
+            else if (currentScore >= BLevel)
+            {
+                levelText.text = "B";
+            }
+            else if (currentScore >= CLevel)
+            {
+                levelText.text = "C";
+            }
+            else
+            {
+                levelText.text = "D";
+            }
         }
     }
 }
