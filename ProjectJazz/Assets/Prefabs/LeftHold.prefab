@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7203741091109320760}
   m_Layer: 0
   m_Name: LeftHold
-  m_TagString: Untagged
+  m_TagString: arrows
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49,9 +49,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   isHolding: 0
+  gameObjectToFly: {fileID: 3067485989801027101, guid: 6289e2d41a646e54a9fbacc8bc2fce21, type: 3}
   keyToHold: 276
   hitEffect: {fileID: 6730992836339477929, guid: 312bd669e702bdf48b72d387b7327e61, type: 3}
-  missEffect: {fileID: 0}
+  missEffect: {fileID: 7750313909786900120, guid: 08177d9d34d82d1419bbe0a72d983eb9, type: 3}
   requiredHoldTime: 1
   scorePerHold: 10
 --- !u!61 &7203741091109320760

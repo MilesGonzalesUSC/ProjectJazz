@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class HoldM : MonoBehaviour
 {
     public bool canBePressed; // Whether the note is in the activator zone
     public bool isHolding;    // Whether the player is holding the key
-
+    public GameObject gameObjectToFly;
     public KeyCode keyToHold; // Key to press and hold
 
     public GameObject hitEffect, missEffect;
@@ -32,7 +33,7 @@ public class HoldM : MonoBehaviour
         if (isHolding)
         {
             holdTime += Time.deltaTime; // Increment hold time
-
+            ButtonFlyToBar();
             // Increment score every 0.1 seconds
             scoreTimer += Time.deltaTime;
             if (scoreTimer >= 0.1f)
@@ -55,6 +56,14 @@ public class HoldM : MonoBehaviour
             isHolding = false;
             
         }
+    }
+
+    public void ButtonFlyToBar()
+    {
+        if (gameObjectToFly == null) return;
+        var thisButton = Instantiate(gameObjectToFly);
+        Vector3[] path = { transform.position, new Vector3(-8f, 1f, 0), new Vector3(-5.5f, 4.5f, 0) };
+        thisButton.transform.DOPath(path, 0.5f, PathType.CatmullRom).OnComplete(() => Destroy(thisButton));
     }
 
     private void OnTriggerEnter2D(Collider2D other)

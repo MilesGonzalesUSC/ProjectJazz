@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4183799144253839318}
   m_Layer: 0
   m_Name: RightA
-  m_TagString: Untagged
+  m_TagString: arrows
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -139,3 +139,4 @@ MonoBehaviour:
   goodEffect: {fileID: 7057680692005078557, guid: 262c4bb60c9642d4db8f87cb1d5fff9a, type: 3}
   perfectEffect: {fileID: 7274913223283338222, guid: 6a78eccfba9d16b448d49806c41c360f, type: 3}
   missEffect: {fileID: 7750313909786900120, guid: 08177d9d34d82d1419bbe0a72d983eb9, type: 3}
+  gameObjectToFly: {fileID: 1734559115196230306, guid: 3521d0c537f83bd49bf252b6b78a9202, type: 3}

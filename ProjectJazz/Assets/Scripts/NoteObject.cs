@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class NoteObject : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class NoteObject : MonoBehaviour
     public KeyCode keyToPress;
 
     public GameObject hitEffect, goodEffect, perfectEffect, missEffect;
+
+    public GameObject gameObjectToFly;
 
 
     void Start()
@@ -23,19 +26,20 @@ public class NoteObject : MonoBehaviour
         {
             if (canBePressed)
             {
+                ButtonFlyToBar();
                 gameObject.SetActive(false);
 
                 // GameManager.instance.NoteHit();
 
                 float distanceFromHitbox = Mathf.Abs(transform.position.x + 6.5f);
 
-                if (distanceFromHitbox > 0.25f)
+                if (distanceFromHitbox > 0.35f)
                 {
                     Debug.Log("Hit");
                     GameManager.instance.NormalHit();
                     Instantiate(hitEffect, transform.position, hitEffect.transform.rotation);
                 }
-                else if (distanceFromHitbox > 0.05f)
+                else if (distanceFromHitbox > 0.15f)
                 {
                     Debug.Log("Good!");
                     GameManager.instance.GoodHit();
@@ -51,6 +55,13 @@ public class NoteObject : MonoBehaviour
         }
     }
 
+    public void ButtonFlyToBar()
+    {
+        if (gameObjectToFly == null) return;
+        var thisButton = Instantiate(gameObjectToFly);
+        Vector3[] path = { transform.position, new Vector3(-8f, 1f, 0), new Vector3(-5.5f, 4.5f, 0) };
+        thisButton.transform.DOPath(path, 0.5f, PathType.CatmullRom).OnComplete(() => Destroy(thisButton));
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {

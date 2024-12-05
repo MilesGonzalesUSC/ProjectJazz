@@ -8078,7 +8078,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb71e5f1f9b77824aa4646e828aa8234, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObjectToFly: {fileID: 3067485989801027101, guid: 6289e2d41a646e54a9fbacc8bc2fce21, type: 3}
   defaultImage: {fileID: 21300000, guid: b90dbf74e0d7c724fa7563ab2f3beb27, type: 3}
   pressImage: {fileID: 21300000, guid: f7b4627779a7ae0418decdc39a36a892, type: 3}
   keyToPress: 276
@@ -9602,7 +9601,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb71e5f1f9b77824aa4646e828aa8234, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObjectToFly: {fileID: 1734559115196230306, guid: 3521d0c537f83bd49bf252b6b78a9202, type: 3}
   defaultImage: {fileID: 21300000, guid: ea28ea22fb0812c46aa446a53296967f, type: 3}
   pressImage: {fileID: 21300000, guid: 0eb48a243425c8d45b8a62a5ccccb9f2, type: 3}
   keyToPress: 275
@@ -9762,7 +9760,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &777961714
 Transform:
   m_ObjectHideFlags: 0
@@ -17354,7 +17352,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb71e5f1f9b77824aa4646e828aa8234, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObjectToFly: {fileID: 6427673892772831030, guid: 3f507f18da49cce4e87a2770e837b6b8, type: 3}
   defaultImage: {fileID: 21300000, guid: 23d67e498b87a8240b36ac685c89483b, type: 3}
   pressImage: {fileID: 21300000, guid: 6ef67361c50ee9743bb8ce5d7b2a31d1, type: 3}
   keyToPress: 274
@@ -19473,6 +19470,7 @@ GameObject:
   - component: {fileID: 1467204756}
   - component: {fileID: 1467204758}
   - component: {fileID: 1467204757}
+  - component: {fileID: 1467204759}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -19496,14 +19494,14 @@ MonoBehaviour:
     serializedVersion: 2
     x: 66.00001
     y: 69.333336
-    width: 93.2
+    width: 91.71429
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 1
   itemId: 0
   blockName: Dialog1
   description: Scene 1 Dialog 1
-  eventHandler: {fileID: 0}
+  eventHandler: {fileID: 1467204759}
   commandList:
   - {fileID: 1467204724}
   - {fileID: 1467204700}
@@ -20400,7 +20398,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 182.28572
     y: 68.21429
-    width: 94
+    width: 92.28571
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21295,7 +21293,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 71.55391
     y: 136.04477
-    width: 86
+    width: 84.85715
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21306,6 +21304,21 @@ MonoBehaviour:
   commandList:
   - {fileID: 1467204757}
   suppressAllAutoSelections: 0
+--- !u!114 &1467204759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467204676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 1467204678}
+  suppressBlockAutoSelect: 0
+  waitForFrames: 1
 --- !u!1 &1467256607
 GameObject:
   m_ObjectHideFlags: 0
@@ -28750,7 +28763,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb71e5f1f9b77824aa4646e828aa8234, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObjectToFly: {fileID: 3219129462406583743, guid: 94f1f2cdf29b6344aba08cca01bf4901, type: 3}
   defaultImage: {fileID: 21300000, guid: 36a26784955941d46a2b5c4e7a6c9b13, type: 3}
   pressImage: {fileID: 21300000, guid: 99609770e4128734391ba323bc2ba6fa, type: 3}
   keyToPress: 273
