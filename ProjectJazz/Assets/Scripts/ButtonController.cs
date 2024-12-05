@@ -46,6 +46,7 @@ public class NewBehaviourScript : MonoBehaviour
 
     public void ButtonFlyToBar()
     {
+        if(gameObjectToFly == null) return;
         var thisButton = Instantiate(gameObjectToFly);
         Vector3[] path = {transform.position, new Vector3(-8f, 1f, 0), new Vector3(-5.5f, 4.5f, 0)};
         thisButton.transform.DOPath(path, 0.5f, PathType.CatmullRom).OnComplete(() => Destroy(thisButton));

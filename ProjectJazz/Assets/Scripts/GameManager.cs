@@ -152,12 +152,12 @@ public class GameManager : MonoBehaviour
         {
             resultScreen.SetActive(true);
 
-            normals.text = "" + normalHits;
+            /*normals.text = "" + normalHits;
             goods.text = goodHits.ToString();
             perfects.text = perfectHits.ToString();
             misses.text = "" + missHits;
             holds.text = "" + holdHits;
-            finalScore.text = scoreText.text;
+            finalScore.text = scoreText.text;*/
         }
     }
 }

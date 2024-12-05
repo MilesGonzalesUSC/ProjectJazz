@@ -13,6 +13,7 @@ public class ScoreProgressBar : MonoBehaviour
         var maxIndex = GameManager.instance.currentScore * 10 / maxScore;
         for (int i = 0; i < Mathf.Floor(maxIndex); i++)
         {
+            if(i >= fills.Count) return;
             fills[i].SetActive(true);
         }
     }
