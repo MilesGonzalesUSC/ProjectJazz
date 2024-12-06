@@ -2285,7 +2285,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb71e5f1f9b77824aa4646e828aa8234, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObjectToFly: {fileID: 1734559115196230306, guid: 3521d0c537f83bd49bf252b6b78a9202, type: 3}
   defaultImage: {fileID: 21300000, guid: ea28ea22fb0812c46aa446a53296967f, type: 3}
   pressImage: {fileID: 21300000, guid: 0eb48a243425c8d45b8a62a5ccccb9f2, type: 3}
   keyToPress: 275
@@ -11160,7 +11159,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb71e5f1f9b77824aa4646e828aa8234, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObjectToFly: {fileID: 3219129462406583743, guid: 94f1f2cdf29b6344aba08cca01bf4901, type: 3}
   defaultImage: {fileID: 21300000, guid: 36a26784955941d46a2b5c4e7a6c9b13, type: 3}
   pressImage: {fileID: 21300000, guid: 99609770e4128734391ba323bc2ba6fa, type: 3}
   keyToPress: 273
@@ -21537,7 +21535,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb71e5f1f9b77824aa4646e828aa8234, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObjectToFly: {fileID: 6427673892772831030, guid: 3f507f18da49cce4e87a2770e837b6b8, type: 3}
   defaultImage: {fileID: 21300000, guid: 23d67e498b87a8240b36ac685c89483b, type: 3}
   pressImage: {fileID: 21300000, guid: 6ef67361c50ee9743bb8ce5d7b2a31d1, type: 3}
   keyToPress: 274
@@ -27581,6 +27578,7 @@ MonoBehaviour:
   misses: {fileID: 2005607925}
   holds: {fileID: 2005607926}
   levelText: {fileID: 2005607924}
+  titleText: {fileID: 1843423273}
   SLevel: 20000
   ALevel: 18000
   BLevel: 13000
@@ -39104,7 +39102,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb71e5f1f9b77824aa4646e828aa8234, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObjectToFly: {fileID: 3067485989801027101, guid: 6289e2d41a646e54a9fbacc8bc2fce21, type: 3}
   defaultImage: {fileID: 21300000, guid: b90dbf74e0d7c724fa7563ab2f3beb27, type: 3}
   pressImage: {fileID: 21300000, guid: f7b4627779a7ae0418decdc39a36a892, type: 3}
   keyToPress: 276

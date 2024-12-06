@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
     public GameObject resultScreen;
     public TextMeshProUGUI finalScore;
     public TextMeshProUGUI normals, goods, perfects, misses, holds;
-    public TextMeshProUGUI levelText;
+    public TextMeshProUGUI levelText, titleText;
     public float SLevel;
     public float ALevel;
     public float BLevel;
@@ -167,22 +167,27 @@ public class GameManager : MonoBehaviour
             if (currentScore >= SLevel)
             {
                 levelText.text = "S";
+                titleText.text = "PERFECT !";
             }
             else if (currentScore >= ALevel)
             {
                 levelText.text = "A";
+                titleText.text = "NICE !";
             }
             else if (currentScore >= BLevel)
             {
                 levelText.text = "B";
+                titleText.text = "GOODJOB !";
             }
             else if (currentScore >= CLevel)
             {
                 levelText.text = "C";
+                titleText.text = "NICE TRY !";
             }
             else
             {
                 levelText.text = "D";
+                titleText.text = "YOU CAN DO BETTER !";
             }
         }
     }
