@@ -21516,7 +21516,7 @@ MonoBehaviour:
   scorePerHoldNote: 100
   currentMultiplier: 1
   multiplierTracker: 0
-  multiplierThresholds: 050000000f0000001e0000003c000000
+  multiplierThresholds: 050000000a0000001400000028000000
   scoreText: {fileID: 147584738}
   multiText: {fileID: 1008974638}
   totalNotes: 0

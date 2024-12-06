@@ -20914,6 +20914,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7620539846363999142, guid: 1afbc745873b28c4f9c29c9c75af52f2, type: 3}
+      propertyPath: maxScore
+      value: 55000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27939,7 +27943,7 @@ MonoBehaviour:
   scorePerHoldNote: 100
   currentMultiplier: 1
   multiplierTracker: 0
-  multiplierThresholds: 050000000f0000001e0000003c000000
+  multiplierThresholds: 050000000a0000001400000028000000
   scoreText: {fileID: 147584738}
   multiText: {fileID: 1008974638}
   totalNotes: 0
@@ -27957,9 +27961,9 @@ MonoBehaviour:
   holds: {fileID: 2005607926}
   levelText: {fileID: 2005607924}
   titleText: {fileID: 1310018125}
-  SLevel: 20000
-  ALevel: 18000
-  BLevel: 13000
+  SLevel: 30000
+  ALevel: 20000
+  BLevel: 15000
   CLevel: 10000
   flowchart: {fileID: 1467204679}
   fungusBlock: 
@@ -40766,7 +40770,6 @@ GameObject:
   - component: {fileID: 2123265083}
   - component: {fileID: 2123265085}
   - component: {fileID: 2123265084}
-  - component: {fileID: 2123265086}
   m_Layer: 5
   m_Name: Results
   m_TagString: Untagged
@@ -40837,32 +40840,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2123265082}
   m_CullTransparentMesh: 1
---- !u!114 &2123265086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2123265082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a14155bf8fde8649befc67710a2f720, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  accuracyText: {fileID: 2114771487}
-  perfectText: {fileID: 1806825976}
-  goodText: {fileID: 130579916}
-  normalText: {fileID: 762311923}
-  holdText: {fileID: 1982362689}
-  missText: {fileID: 268899774}
-  totalScoreText: {fileID: 843076554}
-  fullComboText: {fileID: 914503842}
-  scoreAddTime: 3
-  levelText: {fileID: 1866121457}
-  SLevel: 1000
-  ALevel: 800
-  BLevel: 600
-  CLevel: 400
 --- !u!1 &2125137718
 GameObject:
   m_ObjectHideFlags: 0

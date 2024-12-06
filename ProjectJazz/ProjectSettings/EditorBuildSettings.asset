@@ -29,6 +29,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BarMap.unity
     guid: 86cf5b6e7e1189746b7d20471f1b20d2
+  - enabled: 0
+    path: Assets/Scenes/Bar.unity
+    guid: 1affef7ac592e7e4ab8f66e3b15a0cd0
+  - enabled: 0
+    path: Assets/Scenes/TheaterMap.unity
+    guid: 524684d9715015a4fac1c3c78ed2775b
+  - enabled: 0
+    path: Assets/Scenes/Theater.unity
+    guid: 4c98cd897a835b740ba222d88f3dab33
+  - enabled: 0
+    path: Assets/Scenes/FCMap.unity
+    guid: bc7dd32ae16be8141bd757d9b4a58b35
+  - enabled: 0
+    path: Assets/Scenes/FinalChurch.unity
+    guid: 4315157c6510c8d4bad64d4e3e1bd5ba
   - enabled: 1
     path: Assets/Scenes/End_Test.unity
     guid: e54f3f1d5ee548c44b812b5c242a9692
