@@ -15460,7 +15460,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &777961714
 Transform:
   m_ObjectHideFlags: 0
@@ -34656,6 +34656,7 @@ MonoBehaviour:
   nextLayer: Church (Night)
   interactionDistance: 5
   loadToColor: {r: 0, g: 0, b: 0, a: 1}
+  particleEffect: {fileID: 0}
 --- !u!114 &1796601568
 MonoBehaviour:
   m_ObjectHideFlags: 0
