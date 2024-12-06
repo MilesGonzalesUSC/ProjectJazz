@@ -2355,7 +2355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d70b500fc08a5f34abb9095ff1095952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLayer: AlleyMap
+  nextLayer: Tutorial
   interactionDistance: 5
   loadToColor: {r: 0, g: 0, b: 0, a: 1}
   particleEffect: {fileID: 2898043221189588714, guid: 5df513ee8b3e1b14b8e755593ee024bb, type: 3}

@@ -19588,7 +19588,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1467204678}
+  - {fileID: 1467204758}
   selectedCommands: []
   variables: []
   description: 
@@ -21317,7 +21317,7 @@ MonoBehaviour:
   suppressAllAutoSelections: 0
 --- !u!114 &1467204759
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -26100,6 +26100,7 @@ MonoBehaviour:
   nextLayer: ChurchMap
   interactionDistance: 5
   loadToColor: {r: 0, g: 0, b: 0, a: 1}
+  particleEffect: {fileID: 0}
 --- !u!114 &1796601568
 MonoBehaviour:
   m_ObjectHideFlags: 0
