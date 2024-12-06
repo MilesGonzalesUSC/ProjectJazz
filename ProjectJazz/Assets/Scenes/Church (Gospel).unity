@@ -22923,6 +22923,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcb9554585640724098966b117498edd, type: 3}
+--- !u!114 &1310018125 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7246616636619518604, guid: 0a62c30488c4a694097decc95b4f999b, type: 3}
+  m_PrefabInstance: {fileID: 2005607922}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1312406826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26135,6 +26146,12 @@ GameObject:
   - component: {fileID: 1467204785}
   - component: {fileID: 1467204784}
   - component: {fileID: 1467204791}
+  - component: {fileID: 1467204793}
+  - component: {fileID: 1467204792}
+  - component: {fileID: 1467204795}
+  - component: {fileID: 1467204794}
+  - component: {fileID: 1467204796}
+  - component: {fileID: 1467204797}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -26157,7 +26174,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -120.22493
-    y: 87.77712
+    y: 86.56132
     width: 93.16109
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -26167,6 +26184,8 @@ MonoBehaviour:
   description: Scene 1 Dialog 1
   eventHandler: {fileID: 1467204791}
   commandList:
+  - {fileID: 1467204793}
+  - {fileID: 1467204796}
   - {fileID: 1467204736}
   - {fileID: 1467204735}
   - {fileID: 1467204734}
@@ -26201,6 +26220,7 @@ MonoBehaviour:
   - {fileID: 1467204773}
   - {fileID: 1467204737}
   - {fileID: 1467204723}
+  - {fileID: 1467204792}
   suppressAllAutoSelections: 0
 --- !u!114 &1467204679
 MonoBehaviour:
@@ -26227,9 +26247,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1467204710}
+  - {fileID: 1467204678}
   selectedCommands:
-  - {fileID: 1467204731}
+  - {fileID: 1467204792}
   variables: []
   description: 
   stepPause: 0
@@ -26271,7 +26291,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 75.254395
-    y: 92.14121
+    y: 91.53331
     width: 94.37689
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -26281,6 +26301,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1467204795}
+  - {fileID: 1467204797}
   - {fileID: 1467204761}
   - {fileID: 1467204760}
   - {fileID: 1467204759}
@@ -26303,6 +26325,7 @@ MonoBehaviour:
   - {fileID: 1467204764}
   - {fileID: 1467204763}
   - {fileID: 1467204731}
+  - {fileID: 1467204794}
   suppressAllAutoSelections: 0
 --- !u!114 &1467204723
 MonoBehaviour:
@@ -27747,7 +27770,7 @@ MonoBehaviour:
   sayDialog: {fileID: 691079385}
 --- !u!114 &1467204791
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -27760,6 +27783,104 @@ MonoBehaviour:
   parentBlock: {fileID: 1467204678}
   suppressBlockAutoSelect: 0
   waitForFrames: 1
+--- !u!114 &1467204792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467204676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b359b09a7ba2e4af981f07c07f8af85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 110
+  indentLevel: 0
+--- !u!114 &1467204793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467204676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 109
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: a94d5e3f9d54de84ca88430db80bc40b, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
+--- !u!114 &1467204794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467204676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b359b09a7ba2e4af981f07c07f8af85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 112
+  indentLevel: 0
+--- !u!114 &1467204795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467204676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 111
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: 65a6b8bfe07a79943a5f5dd62c528909, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
+--- !u!114 &1467204796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467204676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 616cd37e21c7645c58a89edf5abee56f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 113
+  indentLevel: 0
+  duration: 2
+  amount: {x: 0, y: 0}
+  waitUntilFinished: 1
+--- !u!114 &1467204797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467204676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 616cd37e21c7645c58a89edf5abee56f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 114
+  indentLevel: 0
+  duration: 2
+  amount: {x: 0, y: 0}
+  waitUntilFinished: 1
 --- !u!1 &1467256607
 GameObject:
   m_ObjectHideFlags: 0
@@ -27816,7 +27937,7 @@ MonoBehaviour:
   misses: {fileID: 2005607925}
   holds: {fileID: 2005607926}
   levelText: {fileID: 2005607924}
-  titleText: {fileID: 1843423273}
+  titleText: {fileID: 1310018125}
   SLevel: 20000
   ALevel: 18000
   BLevel: 13000

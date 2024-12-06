@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/StartMenu.unity
     guid: 129cf50d676eb49428f030d4fd71da44
   - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 5abb317a09e475742a449f3750022fcd
+  - enabled: 1
     path: Assets/Scenes/AlleyMap.unity
     guid: f2ba0758cee1b044282e1cb1c54993de
   - enabled: 1
