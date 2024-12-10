@@ -6536,7 +6536,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5b5a70c207eb0064cbaa706142e4c55f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7a024d44ecc464e42aad6476e0e3f4b9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -26879,6 +26879,7 @@ GameObject:
   - component: {fileID: 1467204815}
   - component: {fileID: 1467204820}
   - component: {fileID: 1467204819}
+  - component: {fileID: 1467204821}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -26901,7 +26902,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -160.95439
-    y: 154.03848
+    y: 152.97466
     width: 93.61702
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -26955,9 +26956,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1467204678}
-  selectedCommands:
-  - {fileID: 1467204723}
+  - {fileID: 1467204729}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -26998,8 +26998,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -59.548004
-    y: 153.08348
+    x: -46.78204
+    y: 154.14731
     width: 94.68085
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -27011,6 +27011,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 1467204795}
   - {fileID: 1467204797}
+  - {fileID: 1467204821}
   - {fileID: 1467204814}
   - {fileID: 1467204813}
   - {fileID: 1467204812}
@@ -27093,8 +27094,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 113.56416
-    y: 159.31316
+    x: 73.138695
+    y: 150.80254
     width: 87.23404
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -27177,7 +27178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 109
   indentLevel: 0
-  musicClip: {fileID: 8300000, guid: a94d5e3f9d54de84ca88430db80bc40b, type: 3}
+  musicClip: {fileID: 8300000, guid: 472c57e26a8bf2448a36bd6aef01394e, type: 3}
   atTime: 0
   loop: 1
   fadeDuration: 1
@@ -27640,7 +27641,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 1895806982}
 --- !u!114 &1467204812
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -27727,7 +27728,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 1370824783}
 --- !u!114 &1467204815
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -27757,7 +27758,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 463768878}
 --- !u!114 &1467204816
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -27787,7 +27788,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 463768878}
 --- !u!114 &1467204817
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -27816,7 +27817,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 1370824783}
 --- !u!114 &1467204818
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -27846,7 +27847,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 463768878}
 --- !u!114 &1467204819
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -27873,7 +27874,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 1370824783}
 --- !u!114 &1467204820
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -27900,6 +27901,34 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 463768878}
+--- !u!114 &1467204821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467204676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 138
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1796601560}
+  targetComponentAssemblyName: EventController, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: EventController
+  targetMethod: startPlaying
+  targetMethodText: 'startPlaying (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!1 &1467256607
 GameObject:
   m_ObjectHideFlags: 0
@@ -29784,7 +29813,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1568394660
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33550,6 +33579,7 @@ GameObject:
   - component: {fileID: 1796601565}
   - component: {fileID: 1796601567}
   - component: {fileID: 1796601568}
+  - component: {fileID: 1796601569}
   m_Layer: 0
   m_Name: Dark
   m_TagString: Untagged
@@ -33676,7 +33706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d70b500fc08a5f34abb9095ff1095952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLayer: Church (Night)
+  nextLayer: FCMap
   interactionDistance: 5
   loadToColor: {r: 0, g: 0, b: 0, a: 1}
   particleEffect: {fileID: 0}
@@ -33692,6 +33722,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0985f2ce3a49070439de7d86bd6db472, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1796601569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796601560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc641937729a74798b39dbb36b73781d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gamePanel: {fileID: 0}
+  UI: {fileID: 1568394659}
 --- !u!1001 &1802745097
 PrefabInstance:
   m_ObjectHideFlags: 0
