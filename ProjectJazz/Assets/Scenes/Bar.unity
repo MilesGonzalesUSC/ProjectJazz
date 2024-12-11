@@ -24669,7 +24669,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -175.24019
     y: 135.35701
-    width: 90.65933
+    width: 92.49084
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 1
@@ -24764,7 +24764,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -59.498833
     y: 134.86726
-    width: 91.75824
+    width: 93.95604
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -24861,7 +24861,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 48.107086
     y: 134.74214
-    width: 84.06593
+    width: 85.16483
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -25654,7 +25654,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 691079385}
 --- !u!114 &1467204819
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
