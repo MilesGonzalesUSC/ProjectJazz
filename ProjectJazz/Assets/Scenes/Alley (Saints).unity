@@ -19513,7 +19513,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 66.00001
     y: 69.333336
-    width: 91.71429
+    width: 92
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 1
@@ -19599,9 +19599,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1467204710}
+  - {fileID: 1467204678}
   selectedCommands:
-  - {fileID: 1467204764}
+  - {fileID: 1467204695}
   variables: []
   description: 
   stepPause: 0
@@ -20421,7 +20421,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 182.28572
     y: 68.21429
-    width: 92.28571
+    width: 93
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21321,7 +21321,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 71.55391
     y: 136.04477
-    width: 84.85715
+    width: 85
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -30736,7 +30736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7620539846363999142, guid: 1afbc745873b28c4f9c29c9c75af52f2, type: 3}
       propertyPath: maxScore
-      value: 10000
+      value: 25000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
