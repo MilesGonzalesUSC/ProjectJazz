@@ -24450,7 +24450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7620539846363999142, guid: 1afbc745873b28c4f9c29c9c75af52f2, type: 3}
       propertyPath: maxScore
-      value: 30000
+      value: 120000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31257,9 +31257,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1467204821}
+  - {fileID: 1467204710}
   selectedCommands:
-  - {fileID: 1467204823}
+  - {fileID: 1467204808}
   variables: []
   description: 
   stepPause: 0
@@ -31890,7 +31890,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 125
   indentLevel: 0
-  storyText: "Appreciate it big man, now let\u2019s cut to the chase"
+  storyText: "Appreciate it big man, now let\u2019s cut to the chase."
   description: 
   character: {fileID: 2096011501}
   portrait: {fileID: 0}
@@ -32296,7 +32296,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: 'Let''s do some improv~
 
-    (Click whatever you like)'
+    (Press whatever you like)'
   description: 
   character: {fileID: 2096011501}
   portrait: {fileID: 0}
@@ -44687,6 +44687,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -125
       objectReference: {fileID: 0}
+    - target: {fileID: 2673365168284873520, guid: 0a62c30488c4a694097decc95b4f999b, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673365168284873520, guid: 0a62c30488c4a694097decc95b4f999b, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673365168284873520, guid: 0a62c30488c4a694097decc95b4f999b, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.7411765
+      objectReference: {fileID: 0}
     - target: {fileID: 2970588489678507987, guid: 0a62c30488c4a694097decc95b4f999b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -44750,6 +44762,18 @@ PrefabInstance:
     - target: {fileID: 7079423170493515636, guid: 0a62c30488c4a694097decc95b4f999b, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -425
+      objectReference: {fileID: 0}
+    - target: {fileID: 7246616636619518604, guid: 0a62c30488c4a694097decc95b4f999b, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7246616636619518604, guid: 0a62c30488c4a694097decc95b4f999b, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7246616636619518604, guid: 0a62c30488c4a694097decc95b4f999b, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.7411765
       objectReference: {fileID: 0}
     - target: {fileID: 7551678867817770788, guid: 0a62c30488c4a694097decc95b4f999b, type: 3}
       propertyPath: m_Pivot.x
