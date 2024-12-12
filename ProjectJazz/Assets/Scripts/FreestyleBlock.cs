@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class FreestyleBlock : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class FreestyleBlock : MonoBehaviour
     public AudioClip downArrowClip;
     public AudioClip leftArrowClip;
     public AudioClip rightArrowClip;
-
+    public GameObject gameObjectToFly;
     private AudioSource audioSource;
 
     void Start()
@@ -33,21 +34,25 @@ public class FreestyleBlock : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 PlayAudioClip(upArrowClip);
+                ButtonFlyToBar();
                 TriggerEffect();
             }
             else if (Input.GetKeyDown(KeyCode.DownArrow))
             {
                 PlayAudioClip(downArrowClip);
+                ButtonFlyToBar();
                 TriggerEffect();
             }
             else if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 PlayAudioClip(leftArrowClip);
+                ButtonFlyToBar();
                 TriggerEffect();
             }
             else if (Input.GetKeyDown(KeyCode.RightArrow))
             {
                 PlayAudioClip(rightArrowClip);
+                ButtonFlyToBar();
                 TriggerEffect();
             }
         }
@@ -66,6 +71,14 @@ public class FreestyleBlock : MonoBehaviour
         {
             audioSource.PlayOneShot(clip);
         }
+    }
+
+    public void ButtonFlyToBar()
+    {
+        if (gameObjectToFly == null) return;
+        var thisButton = Instantiate(gameObjectToFly);
+        Vector3[] path = { transform.position, new Vector3(-8f, 1f, 0), new Vector3(-5.5f, 4.5f, 0) };
+        thisButton.transform.DOPath(path, 0.5f, PathType.CatmullRom).OnComplete(() => Destroy(thisButton));
     }
 
     private void OnTriggerEnter2D(Collider2D other)
