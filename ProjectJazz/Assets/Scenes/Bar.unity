@@ -31257,8 +31257,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1467204678}
-  selectedCommands: []
+  - {fileID: 1467204821}
+  selectedCommands:
+  - {fileID: 1467204823}
   variables: []
   description: 
   stepPause: 0
@@ -32293,7 +32294,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 139
   indentLevel: 0
-  storyText: Let's do some improv~
+  storyText: 'Let''s do some improv~
+
+    (Click whatever you like)'
   description: 
   character: {fileID: 2096011501}
   portrait: {fileID: 0}
@@ -32380,10 +32383,10 @@ MonoBehaviour:
   holds: {fileID: 2005607926}
   levelText: {fileID: 2005607924}
   titleText: {fileID: 1310018125}
-  SLevel: 20000
-  ALevel: 18000
-  BLevel: 13000
-  CLevel: 10000
+  SLevel: 90000
+  ALevel: 80000
+  BLevel: 70000
+  CLevel: 50000
   flowchart: {fileID: 1467204679}
   fungusBlock: 
 --- !u!4 &1467256609
